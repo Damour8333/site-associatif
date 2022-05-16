@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/*font-family: 'Koulen', cursive;*/
+/*variables*/
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Koulen', cursive;
+    
+}
+
+header {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column-reverse;
+    border-bottom:5px solid orange ;
+    position:fixed;
+    width: 100vw;
+    background-color:#fff;
+    top:0;
+	
+    
+}
+header h1{
+    font-size: 50px;
+    color: #00000072;
+
+}
+.nav {
+    padding: 0;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    
+}
+.nav a{
+    padding: 10px;
+}
+.acceuil{
+ background: orange;
+ 
+
+}
+.Donation{
+    background: rgb(224, 93, 5);
+}
+.Inscription{
+    background: rgb(245, 215, 20);
+}
+.connection{
+    background: rgba(255, 187, 62, 0.857);
+}
+
+/*sectin 1 début*/
+.section_1{
+    
+    background-image:url(img/lion.jpg) ;
+    height: 100vh;
+    background-position-x: -180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+justify-content:flex-start;
+align-items:center;
+flex-direction: column;
+padding-top: 150px;
+
+}
+
+
+
+.titre_section_1{
+    margin-top: 60px;
+    padding: 30px;
+    font-size: 35px;
+}
+.section_1 h1{
+    color:rgba(255,255,255,0.9);
+    text-transform:uppercase;
+    text-shadow:#00000072 10px 10px;
+    margin-top: -50px;
+}
+.section_1 span{
+    color: rgb(230, 176, 78);
+}
+.section_1 button{
+    background: orange;
+     font-size:16px;
+      border: none;
+      color: #00000072;
+      border-radius: 10px;
+    width: 50%;
+    padding: 10px 25px;
+    margin-left: 50px;
+    margin-top: 300px;
+}
+/*section 1 fin*/
+/*section 2*/
+
+.section_2{
+
+    display: grid;
+    grid-template-columns:  100% ;
+    grid-template-rows: repeat(4,200px);
+    
+}
+.number1{
+grid-column:  1/1;
+grid-row:1/2 ;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    color: orange;
+    background: rgb(255, 95, 37);
+    text-align: center;
+    padding: 20px;
+    font-size:40px;
+    font-weight: bold;
+    text-shadow: #00000072 5px 5px;
+  
+  
+  
+ 
+}
+.number2{
+    grid-column:  1/1;
+    grid-row:2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+background:  rgb(241, 230, 162); 
+color: orange;
+text-align: center;
+padding: 20px;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+padding: 20px;
+
+font-weight: bold;
+text-shadow: #00000072 5px 5px;
+}
+.number3{
+    grid-column:  1/2;
+    grid-row:3/4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+background: rgb(237, 107, 0);
+color: orange;
+text-align: center;
+padding: 100px;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+padding: 20px;
+font-weight: bold;
+text-shadow:  #00000072 5px 5px;
+
+}
+.number4{
+    grid-column:  1/2;
+    grid-row:4/-2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+color: orange;
+background: rgb(227, 73, 17);
+padding: 20px;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+text-shadow: #00000072 5px 5px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+/*section 2 fin*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media only screen and (min-width:800px){
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header h1{
+        margin-right: 20px;
+        font-size: 50px;
+    
+    }
+ .nav a{
+        padding: 25px;
+    
+    }
+
+    .section_1{
+        background-image:url(img/lion.jpg) ;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .titre_section_1{
+        font-size: 50px;
+    }
+    .section_1 button{
+        margin-left: 50%;
+    }
+    /*SECTION 2*/
+    .section_2{
+        grid-template-columns: 25% 25%  25% 25%;
+        grid-template-rows: 200px 200px;
+
+    }
+    .number1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+    .cascade{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url(https://images.pexels.com/photos/2743287/pexels-photo-2743287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-position-y: top;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+    .number2{
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+    .zebre{
+        grid-column: 3/4;
+        grid-row: 2/-5;
+        background-image: url(https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?cs=srgb&dl=pexels-pixabay-247376.jpg&fm=jpg);
+        
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .number3{
+        grid-column: 3/4;
+        grid-row: 1/2; 
+        flex-wrap: nowrap;
+    }
+    .number4{
+        grid-column: 4/-1;
+         grid-row: -2/-1; 
+    }
+    /*SECTION 2 FIN*/
+
+    }
+        
+    
