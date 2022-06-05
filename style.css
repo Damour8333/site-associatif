@@ -201,7 +201,7 @@ text-shadow: #00000072 5px 5px;
 .section_3{
     display: grid;
     grid-template-columns:100% ;
-    grid-template-rows:repeat(8,200px) ;
+    grid-template-rows:       repeat(8,200px) ;
 }
 .section_3 article{
 padding:20px ;
@@ -212,6 +212,10 @@ padding:20px ;
     color: white;
     background: black;
     padding: 20px;
+    
+    
+
+    
 }
 .section_3 button{
     margin-top: 5px;
@@ -243,6 +247,7 @@ background:  rgb(237, 107, 0);
     background-position: center;
     background-size: cover;
     
+    
 }
 .article_3{
     grid-area: 4/1/5/2;
@@ -257,7 +262,7 @@ background:  rgb(237, 107, 0);
 .article_4{
     grid-area: 6/1/7/2;
     padding: 3px;
-    overflow: hidden;
+    
     color:white;
 }
  
@@ -267,7 +272,7 @@ background:  rgb(237, 107, 0);
     padding: 3px;
     color: #fff;
     background: orange;
-    overflow-wrap: wrap;
+    
 }
 .elephant{
     grid-area:8/1/9/2 ;
@@ -361,7 +366,7 @@ background:  rgb(237, 107, 0);
     .section_3{
         display: grid;
         grid-template-columns:50% 50% ;
-        grid-template-rows:repeat(6,200px) ;
+        grid-template-rows: 300px 300px 200px 300px 200px  200px/*repeat(6,200px)*/ ;
     }
     .article_3 button{
         color: #fff;
@@ -462,7 +467,7 @@ background:  rgb(237, 107, 0);
     /*SECTION 2*/
     .section_2{
         grid-template-columns: 25% 25%  25% 25%;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 300px 300px;
 
     }
     .number1{
@@ -473,7 +478,7 @@ background:  rgb(237, 107, 0);
     .cascade{
         grid-column: 2/3;
         grid-row: 1/2;
-        background-image: url(https://images.pexels.com/photos/2743287/pexels-photo-2743287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: url(img/cascade.jpg);
         background-position-y: top;
         background-size: cover;
         background-attachment: fixed;
@@ -483,22 +488,39 @@ background:  rgb(237, 107, 0);
         grid-column: 2/3;
         grid-row: 2/2;
     }
-    .zebre{
-        grid-column: 3/4;
-        grid-row: 2/-5;
-        background-image: url(https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?cs=srgb&dl=pexels-pixabay-247376.jpg&fm=jpg);
-        
+    .koala{
+        grid-column: 4/-1;
+        grid-row: 1/2;
+        background-image: url(img/koala.jpg);
+        background-position-y: top;
         background-size: cover;
-        background-attachment: fixed;
+        
     }
     .number3{
         grid-column: 3/4;
         grid-row: 1/2; 
         flex-wrap: nowrap;
     }
+    .planet{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url(img/planet.jpg);
+        background-position-y: top;
+        background-size: cover;
+    }
     .number4{
         grid-column: 4/-1;
-         grid-row: -2/-1; 
+         grid-row: -2/-1;
+    }
+    .zebu{
+        grid-column: 3/4;
+        grid-row: -2/-1;
+        background-image: url(img/zebu.jpg);
+        background-size: cover;
+        background-position-y: -50px;
+        filter: grayscale(80%);
+    
+    
     }
     /*SECTION 2 FIN*/
 
