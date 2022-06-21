@@ -9,6 +9,7 @@
     text-decoration: none;
     font-family: 'Koulen', cursive;
     
+    
 }
 
 header {
@@ -22,6 +23,7 @@ header {
     width: 100vw;
     background-color:#fff;
     top:0;
+    z-index: 1000;
 	
     
 }
@@ -67,10 +69,10 @@ header h1{
     background-size: cover;
     background-attachment: fixed;
     display:flex;
-justify-content:flex-start;
-align-items:center;
-flex-direction: column;
-padding-top: 200px;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+    padding-top: 200px;
 
 }
 
@@ -92,10 +94,10 @@ padding-top: 200px;
 }
 .section_1 button{
     background: orange;
-     font-size:16px;
-      border: none;
-      color: #00000072;
-      border-radius: 10px;
+    font-size:16px;
+    border: none;
+    color: #00000072;
+    border-radius: 10px;
     width: 50%;
     padding: 10px 25px;
     margin-left: 50px;
@@ -115,12 +117,12 @@ padding-top: 200px;
     
 }
 .number1{
-grid-column:  1/1;
-grid-row:1/2 ;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+    grid-column:  1/1;
+    grid-row:1/2 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: orange;
     background: rgb(255, 95, 37);
     text-align: center;
@@ -140,17 +142,17 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-background:  rgb(241, 230, 162); 
-color: orange;
-text-align: center;
-padding: 20px;
-font-size: 40px;
-font-weight: bold;
-text-align: center;
-padding: 20px;
+    background:  rgb(241, 230, 162); 
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
 
-font-weight: bold;
-text-shadow: #00000072 5px 5px;
+    font-weight: bold;
+    text-shadow: #00000072 5px 5px;
 }
 .number3{
     grid-column:  1/2;
@@ -285,6 +287,58 @@ background:  rgb(237, 107, 0);
     background-size: cover;}
     
 /*section 3 fin*/
+
+
+/*Formulaire*/
+.formulaire{
+    display: flex;
+    justify-content: center;
+}
+form{
+    margin-top: -10px;
+    background-color:rgb(245, 163, 11,0.75);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+}
+input{
+    padding: 16px 20px;
+    margin: 5px ;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(241, 230, 162,.75);
+    font-size: 16px;
+    color: #fff;
+    opacity: .8;
+    outline: none;
+}
+
+input[type="password"]:hover,input[type="email"]:hover{
+    opacity: 1;
+    background-color: rgba(176, 152, 16, 0.75)
+}
+
+input[type=submit]{
+    background-color:rgb(238, 40, 50);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+input[type=submit]:hover{
+    background-color:rgb(173,7,14)
+}
+
+label{
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+
+
+/*fin formulaire*/
+
 /*footer*/
 footer{
  margin-top: 30px;   
@@ -366,7 +420,7 @@ border-top: 5px solid orange;
     min-height:200px
     
 }
-li{
+_li{
     list-style-type: none;
 }
 .card-img-top{
@@ -669,6 +723,12 @@ li{
     
     }
     /*SECTION 2 FIN*/
+
+    /*Formulaire*/
+    form{
+        margin-top: -30px;
+    }
+    /*fin formulaire*/
     /*footer*/
 footer{
     margin-top: 100px;   
