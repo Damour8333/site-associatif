@@ -334,7 +334,9 @@ label{
     margin-left: 10px;
 }
 
-
+.card ul{
+    list-style-type: none;
+}
 
 
 /*fin formulaire*/
@@ -439,7 +441,7 @@ _li{
     background-color: orange;
     color: white;
 }
-/* ---------------------FIN EVEENEMENTS-----------------*/
+/* ---------------------FIN EVENEMENTS-----------------*/
 
 
 
@@ -543,7 +545,7 @@ _li{
            grid-area:1/2/2/3 ;
             
             background-image: url(img/singe.jpg);
-            background-position :center;
+            background-position :-100;
             background-repeat: no-repeat;
 
             background-size: cover;
